@@ -51,9 +51,9 @@ const greet = function () {
 // Heap is slower than stack because of its dynamic size and non-contiguous memory allocation
 // Stack is used for function calls and local variables, while heap is used for dynamic memory allocation
 
-let myName = "Piyush"; // Stack (Primitive)
-let anotherName = myName; // Stack (Primitive)
-anotherName = "Priyanshu"; // Stack (Primitive)
+//let myName = "Piyush"; // Stack (Primitive)
+//let anotherName = myName; // Stack (Primitive)
+//anotherName = "Priyanshu"; // Stack (Primitive)
 
 //console.log(anotherName);
 //console.log(myName);
@@ -84,10 +84,32 @@ userTwo.app = "PhonePe"; // Changing the app property of userTwo
 
 const gameName = "BGMI"
 
-console.log(gameName.length); // Length of string
-console.log(gameName[0]); // First character of string
-console.log(gameName[1]); // Second character of string
-console.log(gameName[2]); // Third character of string
-console.log(gameName[3]); // Fourth character of string
+//console.log(gameName.length); // Length of string
+//console.log(gameName[0]); // First character of string
+//console.log(gameName[1]); // Second character of string
+//console.log(gameName[2]); // Third character of string
+//console.log(gameName[3]); // Fourth character of string
 
-console.log(gameName.charAt(0)); // First character of string using charAt() method
+//console.log(gameName.charAt(0)); // First character of string using charAt() method
+//console.log(gameName.indexOf("G")); // Index of character "G" in string
+
+//const myRealName = "  Priyanshu bhatt      "
+
+//console.log(myRealName.length); // Length of string
+//console.log(myRealName.trim()); // Trim the string (remove whitespace from both ends)
+//const mySliceName = myRealName.slice(0, 9) // Slice the string from index 0 to 9 (exclusive)
+//console.log(mySliceName); // Print the sliced string
+
+
+// const url = "https://piyushbhatt.com/piyush%30bhatt"; // URL with %30
+// const replace = url.replace("%30", "_"); // Replace "%30" with _ in the string
+// console.log(`Actual Url = ${url} Replace Url = ${replace}`); // Print the original string
+
+// console.log(url.includes("piyush")); // Check if the string contains "piyush"
+// console.log(url.startsWith("priyanshu")); // Check if the string starts with "priyanshu"
+
+const sentence = "Nice to meet you!"
+const words = sentence.split(" ");
+console.log(words); // Split the string into an array of words using space as a delimiter
+
+
