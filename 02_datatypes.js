@@ -1,5 +1,5 @@
 "use strict";
-console.log("LECTURE 2 - DATATYPES");
+console.log("DATATYPES");
 
 // number => 2, 5
 // bigint

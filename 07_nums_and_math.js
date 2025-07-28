@@ -27,8 +27,25 @@ const hundread = 1000000;
 // console.log(Math.round(3.7)); // 4
 // console.log(Math.random());
 
-function dice() {
-    console.log(Math.floor(Math.random() * 6 )+ 1); 
-}
+// function dice() {
+//     console.log(Math.floor(Math.random() * 6 )+ 1); 
+// }
 
-dice()
+// dice()
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++]
+
+// Dates
+
+// let myDate = new Date()
+// console.log(myDate.toString());
+// console.log(myDate.toDateString());
+// console.log(myDate.toLocaleDateString());
+
+let myTimeStamp = Date.now();
+
+console.log(myTimeStamp);
+
+
+
+
