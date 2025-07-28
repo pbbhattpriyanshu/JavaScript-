@@ -1,5 +1,20 @@
-"use strict";
 console.log("DATATYPES");
+// JavaScript has dynamic typing, meaning variables can hold any type of data and can change types.
+// PRIMITIVES TYPES - Copy easily
+// String, number, boolean, null, undefined, symbol
+let a = 23;
+let b = a;  // Copy value
+a = 45;  // Change a, b remains 23
+console.log(a);  // 45
+console.log(b);  // 23
+
+// REFERENCE TYPES -  Don't copy but store reference/address
+//array, object, function
+let arr = [1, 2, 3];
+let arr2 = arr;  // Copy reference  
+arr.push(4);  // Change arr, arr2 also changes
+console.log(arr);  // [1, 2, 3, 4]
+console.log(arr2);  // [1, 2, 3, 4]
 
 // number => 2, 5
 // bigint
@@ -9,6 +24,10 @@ console.log("DATATYPES");
 // undefined => 
 // symbol => unique
 // object
+
+
+
+
 let age = 21;
 let tF = true
 let empty;
