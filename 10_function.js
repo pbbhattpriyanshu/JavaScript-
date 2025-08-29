@@ -68,5 +68,25 @@ function abc(val) {
 }
 
 abc(function (){
+  console.log("Home");
+})
+
+// Concept 2. High order function - a func that return the function or accept the function
+
+//accept
+function high(name) {
+  name();
+}
+
+high(function() {
   console.log("Piyush bhatt");
 })
+
+//return
+function cars() {
+  return function() {
+    console.log("BMW, Porche, Mustang, Ferari, Dodge Challenger, Thar, G-Wagon");
+  }
+}
+
+cars()(); //call func1 func2 - 2 bracket
