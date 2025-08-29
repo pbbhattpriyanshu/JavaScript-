@@ -28,9 +28,8 @@ function sub(val1 = 0, val2 = 0) {
 //Explanation:
 // ...numbers collects all arguments into an array [1,2,3,4,5].
 // Perfect for unknown number of inputs.
-
 function sumOfAll(...numbers) {
-    return numbers.reduce((sum, num) => sum + num, 0);
+  return numbers.reduce((sum, num) => sum + num, 0);
 }
 
 console.log(sumOfAll(1,2,3,4,5));
@@ -59,3 +58,15 @@ let func = function () {
 let wishes = () => {
     console.log("Happy birthday");
 }
+
+let sum = add(1,5);
+console.log("Sum:",sum);
+
+// Concept 1. first class function - func treats like value
+function abc(val) {
+  val();  
+}
+
+abc(function (){
+  console.log("Piyush bhatt");
+})
