@@ -82,3 +82,8 @@ let [first, second, third] = numbers;
 console.log("First:", first);
 console.log("Second:", second);
 console.log("Third:", third);
+
+// Spread Operator - use spread operator to unpack elements from arrays
+// copy array = [...numbers]
+let newProNumbers = [...numbers, 10, 11, 12];
+console.log("New Pro Numbers:", newProNumbers);
