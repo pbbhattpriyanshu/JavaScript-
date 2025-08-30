@@ -25,7 +25,7 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log("***********************************");
 
-//Array Method (Advance level) (forEach, map, filter, reduce)
+//Array Method (Advance level) (forEach, map, filter, reduce, find)
 let subject = ["English, Hindi, Maths, GK, Computer"];
 
 subject.forEach(function (periods) {
@@ -54,3 +54,10 @@ let sum = numbers.reduce(function(accumulator, currentValue) {
 }, 0); //default accumulator value is 0
 
 console.log("Sum of all numbers:", sum);
+
+//find - use find, when you want to find a single element in the array
+let found = numbers.find(function(val) {
+    return val === 1;
+});
+
+console.log("Found element:", found);
