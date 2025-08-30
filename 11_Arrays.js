@@ -31,3 +31,12 @@ let subject = ["English, Hindi, Maths, GK, Computer"];
 subject.forEach(function (periods) {
     console.log("Subjects:",periods);
 })
+
+// map - use map, when you want to make new array (blank array) from basis of old array 
+let numbers = [1,2,3,4,5,6,7,8,9]
+
+let newNumbers = numbers.map(function(val) {
+    return 0;    
+})
+
+console.table(newNumbers);
