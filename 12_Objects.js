@@ -18,4 +18,15 @@ console.log(obj.aa); //undefined
 
 console.log(obj[aa]); //piyush
 
-
+// Nesting and deep access
+const user = {
+    name: "Priyanshu bhatt",
+    address: {
+        city: "Ranikhet",
+        state: "Uttrakhand",
+        location: {
+            lat: 29.6434,
+            lng: 79.4322,
+        }
+    }
+}
