@@ -90,3 +90,20 @@ function cars() {
 }
 
 cars()(); //call func1 func2 - 2 bracket
+
+// Concept 3. Pure vs impure functions
+
+//pure func - a func that can't change outer value 
+let count = 1;
+
+function pure() {
+  console.log("Didn't change any outer value");
+}
+
+//impure func - opposite of pure func
+function impure(){
+  count++;
+}
+
+impure(); //call
+console.log(count); //after call then change
