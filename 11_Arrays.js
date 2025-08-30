@@ -75,3 +75,10 @@ let someEven = numbers.some(function(val) {
 });
 
 console.log("At least one element is even:", someEven);
+
+// Destructuring - use destructuring to unpack values from arrays
+// numbers = [1,2,3,4,5,6,7,8,9]
+let [first, second, third] = numbers;
+console.log("First:", first);
+console.log("Second:", second);
+console.log("Third:", third);
