@@ -23,6 +23,7 @@ const user = {
     name: "Priyanshu bhatt",
     address: {
         city: "Ranikhet",
+        pin: 263645,
         state: "Uttrakhand",
         location: {
             lat: 29.6434,
@@ -30,3 +31,9 @@ const user = {
         }
     }
 }
+
+// object destructuring
+//console.log(lat); //Cannot access 'lat' before initialization
+
+let {lat, lng} = user.address.location;
+console.log(lat); //29.6434
