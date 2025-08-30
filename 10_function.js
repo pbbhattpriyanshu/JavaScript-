@@ -119,3 +119,17 @@ function papa() {
 }
 
 papa()();
+
+// Concept 5. Lexical Scoping - func inside the func, func inside the func * n times
+function home() {
+  let houseRoom = 7; //accessable under home func
+  function huswife() {
+    let parentsRoom = 1; //accessable under huswife func
+    function son() {
+      let mikeRoom = 3; //accessable under son func
+      function daughter() {
+        let makiRoom = 2; //accessable under daughter func
+      }
+    }
+  }
+}
