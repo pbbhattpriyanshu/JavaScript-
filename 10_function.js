@@ -67,6 +67,7 @@ function abc(val) {
   val();  
 }
 
+//Pass - call
 abc(function (){
   console.log("Home");
 })
@@ -141,7 +142,7 @@ function home() {
 
 // Concept 7. Hoisting (declaration and expression)
 callMe() //call the func by line no. 143
-callMeAgain(); // Cannot access 'callMeAgain' before initialization
+// callMeAgain(); // Cannot access 'callMeAgain' before initialization
 
 //run - Func Statement
 function callMe() {  //line no. 146: creating a func
@@ -152,3 +153,10 @@ let callMeAgain = function () {  //line no. 146: creating a func
   console.log("Function hoisting applicable");
 }
 
+// Mini Project - BMI Calculator
+function bmi(weight, height) {
+  return weight / (height * height) //weight - kg, height - m
+}
+
+let report = bmi(70, 1.83);
+console.log(report);
