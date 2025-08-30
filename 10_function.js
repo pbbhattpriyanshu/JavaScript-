@@ -133,3 +133,8 @@ function home() {
     }
   }
 }
+
+// Concept 6. IIFE (Immediately Invoked Function Expression)
+(function () {
+  console.log("Imediately Invoked BOOM!");
+})();
