@@ -160,3 +160,25 @@ function bmi(weight, height) {
 
 let report = bmi(70, 1.83).toFixed(2);
 console.log(report);
+
+// Mini Project - Discount Calculator (HOF)
+function discountCalculator(discount) {
+  return function (price) {
+    return price - price * (discount / 100);
+  }
+}
+
+// Electronics Product - 30% OFF, Clothes Product - 20% OFF, Kids Section - 50% OFF
+let electronicsProduct = discountCalculator(30);
+let clothesProduct = discountCalculator(20);
+let kidSection = discountCalculator(50)
+
+// Order Purchase
+let tvPrice = electronicsProduct(12000);
+let tShirt = clothesProduct(780);
+let toyCar = kidSection(27000)
+
+console.log("Tv Price After discount:", tvPrice); //8400
+console.log("Tshirt Price after discount:", tShirt); //624
+console.log("Toy Car Price after discount:", toyCar); //13500
+
