@@ -107,3 +107,15 @@ function impure(){
 
 impure(); //call
 console.log(count); //after call then change
+
+// Concept 4. Closures - a func that can return a func, that return func use the variable of parent func.
+function papa() {
+  let money = 500;
+  return function son(){
+    let batPrice = 399;
+    let balance = money - batPrice;
+    console.log("Remaining balance is", balance);
+  }
+}
+
+papa()();
