@@ -63,8 +63,17 @@ for(let key in obj2) {
 }
 
 //object.assign - copy the orignal object
-let user2 = Object.assign({}, user)
+let user2 = Object.assign({}, user) // {} -> add extra key: value
 
 for(let key in user2) {
     console.log(key,":", user2[key]);
+}
+
+//deep clone
+// We use deep clone to create a completely independent copy of an object, including all nested objects. This ensures that changes to the clone do not affect the original object, and vice versa. Shallow copies (like spread or Object.assign) only copy top-level properties, so nested objects still reference the same memory location. Deep cloning is important when you want full separation between objects, especially when working with complex or nested data structures.
+
+let user3 = JSON.parse(JSON.stringify(user)); //stringify -> convert object to JSON string, parse -> convert back to object
+
+for(let key in user3) {
+    console.log(key,":", user3[key]);
 }
