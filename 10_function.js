@@ -182,3 +182,16 @@ console.log("Tv Price After discount:", tvPrice); //8400
 console.log("Tshirt Price after discount:", tShirt); //624
 console.log("Toy Car Price after discount:", toyCar); //13500
 
+// Example - Closure
+function counter() {
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  }
+}
+
+let c = counter();
+console.log(c()); //1
+console.log(c()); //2
+console.log(c()); //3
