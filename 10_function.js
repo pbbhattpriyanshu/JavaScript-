@@ -138,3 +138,17 @@ function home() {
 (function () {
   console.log("Imediately Invoked BOOM!");
 })();
+
+// Concept 7. Hoisting (declaration and expression)
+callMe() //call the func by line no. 143
+callMeAgain(); // Cannot access 'callMeAgain' before initialization
+
+//run - Func Statement
+function callMe() {  //line no. 146: creating a func
+  console.log("Function hoisting applicable");
+}
+//Not run - func expression
+let callMeAgain = function () {  //line no. 146: creating a func
+  console.log("Function hoisting applicable");
+}
+
