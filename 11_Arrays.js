@@ -25,7 +25,7 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log("***********************************");
 
-//Array Method (Advance level) (forEach, map, filter, reduce, find)
+//Array Method (Advance level) (forEach, map, filter, reduce, find, every, some)
 let subject = ["English, Hindi, Maths, GK, Computer"];
 
 subject.forEach(function (periods) {
@@ -61,3 +61,17 @@ let found = numbers.find(function(val) {
 });
 
 console.log("Found element:", found);
+
+//every - use every, when you want to check if all elements in the array pass a test
+let allEven = numbers.every(function(val) {
+    return val % 2 === 0;
+});
+
+console.log("All elements are even:", allEven);
+
+//some - use some, when you want to check if at least one element in the array passes a test
+let someEven = numbers.some(function(val) {
+    return val % 2 === 0;
+});
+
+console.log("At least one element is even:", someEven);
