@@ -37,3 +37,18 @@ const user = {
 
 let {lat, lng} = user.address.location;
 console.log(lat); //29.6434
+
+
+// Looping : for-in, objeck.keys, object.entries
+
+//for-in
+for(let key in obj) {
+    //console.log(key); --> obj.key = ❌
+    console.log(obj[key]);
+}
+
+// object.keys --> array 
+console.log(Object.keys(obj)); // [ 'name', 'age', 'role', 'isOnline' ]
+
+// object.entries
+console.log(Object.entries(user)); 
