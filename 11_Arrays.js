@@ -7,7 +7,7 @@ console.log(marks[2]); //1
 
 console.log("***********************************");
 
-//Array Method (beginner level)
+//Array Method (beginner level) (push, pop, shift, unshift, splice, slice, reverse, sort)
 let arr = [1,2,3,4,5];
 arr.push(500); //Add element in array - [1,2,3,4,5,500]
 arr.pop() //remove last element from array - [1,2,3,4,5]
@@ -22,3 +22,12 @@ arr.reverse() // reverse orignal array [3,2,0]
 for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);   
 }
+
+console.log("***********************************");
+
+//Array Method (Advance level) (forEach, map)
+let subject = ["English, Hindi, Maths, GK, Computer"];
+
+subject.forEach(function (periods) {
+    console.log("Subjects:",periods);
+})
