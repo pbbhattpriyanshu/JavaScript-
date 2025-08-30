@@ -62,3 +62,9 @@ for(let key in obj2) {
     console.log(key,":", obj2[key]);
 }
 
+//object.assign - copy the orignal object
+let user2 = Object.assign({}, user)
+
+for(let key in user2) {
+    console.log(key,":", user2[key]);
+}
