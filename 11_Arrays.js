@@ -25,7 +25,7 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log("***********************************");
 
-//Array Method (Advance level) (forEach, map)
+//Array Method (Advance level) (forEach, map, filter)
 let subject = ["English, Hindi, Maths, GK, Computer"];
 
 subject.forEach(function (periods) {
@@ -40,3 +40,10 @@ let newNumbers = numbers.map(function(val) {
 })
 
 console.table(newNumbers);
+
+// filter - use filter, when you want to make new array (blank array) from basis of old array with selected elements, return true or false
+let newSelected = numbers.filter(function(val) {
+    if (val % 2 == 0) return true
+})
+
+console.table(newSelected);
