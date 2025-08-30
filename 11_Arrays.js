@@ -25,7 +25,7 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log("***********************************");
 
-//Array Method (Advance level) (forEach, map, filter)
+//Array Method (Advance level) (forEach, map, filter, reduce)
 let subject = ["English, Hindi, Maths, GK, Computer"];
 
 subject.forEach(function (periods) {
@@ -47,3 +47,10 @@ let newSelected = numbers.filter(function(val) {
 })
 
 console.table(newSelected);
+
+//reduce - use reduce, when you want to reduce the array to a single value
+let sum = numbers.reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue;
+}, 0); //default accumulator value is 0
+
+console.log("Sum of all numbers:", sum);
