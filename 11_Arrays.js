@@ -87,3 +87,8 @@ console.log("Third:", third);
 // copy array = [...numbers]
 let newProNumbers = [...numbers, 10, 11, 12];
 console.log("New Pro Numbers:", newProNumbers);
+
+//example
+let colors = ["Green", "Yellow"];
+colors.splice(1,0,"Red","Blue") //add
+console.table(colors);
