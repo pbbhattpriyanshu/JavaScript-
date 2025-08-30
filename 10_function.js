@@ -158,5 +158,5 @@ function bmi(weight, height) {
   return weight / (height * height) //weight - kg, height - m
 }
 
-let report = bmi(70, 1.83);
+let report = bmi(70, 1.83).toFixed(2);
 console.log(report);
