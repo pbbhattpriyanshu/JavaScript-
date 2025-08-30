@@ -77,3 +77,5 @@ let user3 = JSON.parse(JSON.stringify(user)); //stringify -> convert object to J
 for(let key in user3) {
     console.log(key,":", user3[key]);
 }
+
+// Optional Chaining, computed properties
