@@ -50,5 +50,15 @@ for(let key in obj) {
 // object.keys --> array 
 console.log(Object.keys(obj)); // [ 'name', 'age', 'role', 'isOnline' ]
 
-// object.entries
+// object.entries --> arrays of arrays
 console.log(Object.entries(user)); 
+
+// Copying objects: spread, object.assign, deep clone
+
+// spread
+let obj2 = {...obj};
+
+for(let key in obj2) {
+    console.log(key,":", obj2[key]);
+}
+
