@@ -33,3 +33,25 @@ hide.addEventListener("click", changeBg);
 
 hide.removeEventListener("click", changeColor);
 
+// Other type of event listeners
+
+//input
+let input = document.querySelector("input");
+
+function write(e) {
+    if (e.data !== null) {
+        console.log("You Type", e.data)
+    }
+}
+
+input.addEventListener("input", write);
+
+
+//change
+let change = document.querySelector("select");
+
+function choose(e) {
+    console.log("You Choose", e.target.value)
+}   
+
+change.addEventListener("change", choose);
