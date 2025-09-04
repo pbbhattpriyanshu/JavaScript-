@@ -46,7 +46,27 @@ function countButton() {
     counting.textContent = `Clicked ${count} times`
 }
 
-btn.addEventListener("click", countButton)
+btn.addEventListener("click", countButton);
+
+//Change Color on Click
+// Make a div → on click, change its background to a random color.
+let divChange = document.querySelector(".colorChange");
+
+divChange.addEventListener("click", function(){
+    switch (count) {
+        case 1:
+            divChange.style.backgroundColor = "green";
+            break;
+        case 2:
+            divChange.style.backgroundColor = "red";
+            break;
+        case 3:
+            divChange.style.backgroundColor = "yellow";
+            break;
+        default: divChange.style.backgroundColor = "brown";
+            break;
+    }
+})
 
 // Other type of event listeners
 
