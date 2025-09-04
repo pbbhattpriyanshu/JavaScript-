@@ -68,6 +68,18 @@ divChange.addEventListener("click", function(){
     }
 })
 
+//Hover Effect
+// A box turns red on mouseover, and back to blue on mouseout.
+let box = document.querySelector(".box");
+
+box.addEventListener("mouseover", function(){
+    box.style.backgroundColor = "red"
+})
+
+box.addEventListener("mouseout", function(){
+    box.style.backgroundColor = "pink"
+})
+
 // Other type of event listeners
 
 //input
