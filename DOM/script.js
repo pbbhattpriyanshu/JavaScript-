@@ -16,7 +16,7 @@ console.log(img);
 // Dynamic DOM Manipulation: createElement, appendChild, removeChild, prepend
 let h2 = document.createElement("h2");
 let para = document.createElement("p")
-h2.textContent = "Hello ji"
+// h2.textContent = "Hello ji"
 para.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsa sapiente praesentium necessitatibus dicta porro perspiciatis. Voluptate, impedit aliquid? Mollitia velit repellat rerum voluptatum, porro molestias odio laudantium voluptates quibusdam!"
 console.log(h2); //print in console
 console.log(para);
