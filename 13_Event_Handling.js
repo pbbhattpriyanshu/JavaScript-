@@ -33,6 +33,21 @@ hide.addEventListener("click", changeBg);
 
 hide.removeEventListener("click", changeColor);
 
+// Button Click Counter
+// Create a button → every click increases a number shown on the screen.
+// Example: “Clicked 5 times”.
+let btn = document.querySelector(".countBtn");
+let counting = document.querySelector(".counting")
+let count = 0;
+
+function countButton() {
+    count = count +  1;
+    console.log(count);
+    counting.textContent = `Clicked ${count} times`
+}
+
+btn.addEventListener("click", countButton)
+
 // Other type of event listeners
 
 //input
@@ -49,9 +64,12 @@ input.addEventListener("input", write);
 
 //change
 let change = document.querySelector("select");
-
+let heads = document.querySelector(".heads");
+ 
 function choose(e) {
+    heads.textContent = `${e.target.value} Device is Selected`
     console.log("You Choose", e.target.value)
 }   
 
 change.addEventListener("change", choose);
+
