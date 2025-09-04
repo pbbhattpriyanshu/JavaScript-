@@ -80,6 +80,22 @@ box.addEventListener("mouseout", function(){
     box.style.backgroundColor = "pink"
 })
 
+// Double Click vs Single Click
+// Single click → show alert “Single Click”
+// Double click → show alert “Double Click”
+let single = document.querySelector(".single");
+let double = document.querySelector(".double");
+
+single.addEventListener("click", function(){
+    alert("Single Click");
+})
+
+double.addEventListener("dblclick", function(){
+    alert("Double Click")
+})
+
+
+
 // Other type of event listeners
 
 //input
