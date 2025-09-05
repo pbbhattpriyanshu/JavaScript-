@@ -36,7 +36,7 @@ subject.forEach(function (periods) {
 let numbers = [1,2,3,4,5,6,7,8,9]
 
 let newNumbers = numbers.map(function(val) {
-    return 0;    
+    return val * 2; //multiply each element by 2 and return new array
 })
 
 console.table(newNumbers);
